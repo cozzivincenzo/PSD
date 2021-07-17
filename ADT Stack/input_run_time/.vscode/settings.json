@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "item.h": "c",
+        "stack.h": "c"
+    }
+}
