@@ -1,0 +1,33 @@
+#include "item.h" 
+
+/* STRUTTURA CHE IDENTIFICA LA CODA */   
+typedef struct Queue *queue;
+
+/* FUNZIONE UTILE A CREARE UNA NUOVA CODA */
+queue newQueue(void);
+
+/* FUNZIONE UTILE A CONTROLLARE CHE LA CODA SIA VUOTA */
+int emptyQueue(queue q);
+
+/* FUNZIONE UTILE A INSERIRE ITEM NELLA CODA */
+int accoda(item val, queue q);
+
+/* FUNZIONE UTILE A INSERIRE ITEM IN TESTA ALLA CODA */
+int urgente(item val, queue q);
+
+/* FUNZIONE UTILE ALL'ELIMINAZIONE DI UN ITEM DALLA CODA RICERCANDOLO IN BASE ALL'ID */
+queue annulla(queue q, int id);
+
+/* FUNZIONE UTILE A PRELEVARE E RIMUOVERE L'ITEM IN TESTA ALLA CODA */
+item dequeue(queue q);
+
+/* FUNZIONE UTILE ALLA STAMPA DELLA CODA */
+void outputQueue(queue q);
+
+/* FUNZIONE UTILE ALL'OTTENIMENTO DEL VALORE DELL'ITEM PRESENTE IN TESTA ALLA LISTA SENZA PERO' RIMUOVERLO */
+int getSize(queue q);
+
+/* FUNZIONE UTILE ALL'OTTENIMENTO DEL NUMERO DI ELEMENTI PRESENTI IN LISTA */
+item getItem(queue q, int n);
+
+
